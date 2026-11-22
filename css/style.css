@@ -1,0 +1,535 @@
+
+
+
+
+/* 1. GENERAL PAGE SETTINGS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #26332b;
+    background-color: #f5f7f3;
+}
+
+
+/* 2. HEADINGS AND TEXT*/
+
+h1,
+h2,
+h3 {
+    line-height: 1.3;
+}
+
+h2 {
+    color: #203d2b;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #31583d;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+.section-intro {
+    color: #647568;
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    max-width: 750px;
+}
+
+.sub-heading {
+    margin-top: 35px;
+}
+
+
+/* 3. HEADER AND NAVIGATION*/
+
+header {
+    background-color: #07422a;
+    color: white;
+    padding: 18px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    max-width: 1000px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 8px 16px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f4c84a;
+}
+
+
+/*  4. MAIN CONTAINER AND SECTIONS */
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section {
+    padding: 55px 0;
+    scroll-margin-top: 90px;
+}
+
+.soft-section {
+    background-color: #eaf0e8;
+}
+
+
+/* 5. HOME / HERO SECTION */
+
+.hero {
+    background-color: #e6eee5;
+    text-align: center;
+    padding: 75px 5%;
+}
+
+.hero h1 {
+    color: #0d4e57;
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 22px;
+}
+
+
+/* 6. IMAGE STYLING */
+
+.image-placeholder {
+    width: 100%;
+    margin: 25px 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-placeholder img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+/* Home image */
+
+.hero .image-placeholder img {
+    height: auto;
+}
+
+/* Images inside the main container */
+
+.container .image-placeholder {
+    max-width: 100%;
+}
+
+
+/* 7. BUTTONS */
+
+.button {
+    display: inline-block;
+    background-color: #d9a928;
+    color: #203d2b;
+
+    padding: 11px 20px;
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #f4c84a;
+}
+
+button {
+    margin-top: 15px;
+    padding: 11px 20px;
+
+    border: none;
+    border-radius: 4px;
+
+    background-color: #203d2b;
+    color: white;
+
+    font-size: 15px;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #31583d;
+}
+
+
+/* 8. GRID AND CARD LAYOUT */
+
+.grid {
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(135px, 1fr)
+    );
+
+    gap: 18px;
+    margin-top: 22px;
+}
+
+.card {
+    background-color: white;
+
+    padding: 22px;
+    border-radius: 7px;
+    border: 1px solid #e0e6df;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card p {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.card small {
+    color: #718075;
+    font-size: 12px;
+}
+
+
+/*  9. NOTICE BOXES */
+
+.notice {
+    background-color: #fff5d8;
+
+    border-left: 5px solid #d9a928;
+    padding: 15px;
+
+    margin: 20px auto;
+    border-radius: 4px;
+}
+
+.notice strong {
+    color: #203d2b;
+}
+
+
+/*  10. LISTS */
+
+ul {
+    padding-left: 22px;
+    margin-top: 8px;
+}
+
+li {
+    margin-bottom: 7px;
+}
+
+
+/*11. CONTACT INFORMATION */
+
+.contact-details {
+    margin-top: 18px;
+    padding: 18px;
+
+    background-color: #eaf0e8;
+    border-radius: 6px;
+}
+
+.contact-details p {
+    margin-bottom: 8px;
+}
+
+.contact-details strong {
+    color: #203d2b;
+}
+
+
+/*12. CONTACT FORM*/
+
+form {
+    background-color: white;
+
+    padding: 22px;
+    border-radius: 7px;
+
+    max-width: 650px;
+    margin-top: 20px;
+
+    border: 1px solid #e0e6df;
+}
+
+label {
+    display: block;
+    margin: 12px 0 5px;
+
+    font-weight: bold;
+    color: #203d2b;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 11px;
+
+    border: 1px solid #bfc9bf;
+    border-radius: 4px;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #d9a928;
+    border-color: #31583d;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+/*13. ADMIN DASHBOARD TABLE*/
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+    background-color: white;
+
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+th,
+td {
+    padding: 12px;
+
+    border: 1px solid #dce3da;
+    text-align: left;
+}
+
+th {
+    background-color: #203d2b;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f7f3;
+}
+
+tbody tr:hover {
+    background-color: #eaf0e8;
+}
+
+
+/* 14. REPORT STATUS COLOURS */
+
+.status-review {
+    color: #9a6800;
+    font-weight: bold;
+}
+
+.status-referred {
+    color: #235e9a;
+    font-weight: bold;
+}
+
+.status-resolved {
+    color: #28723c;
+    font-weight: bold;
+}
+
+
+/*  FOOTER*/
+
+footer {
+    background-color: #203d2b;
+    color: white;
+
+    text-align: center;
+    padding: 25px 5%;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+footer strong {
+    font-size: 18px;
+}
+
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 700px) {
+
+    /* Header */
+
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Navigation */
+
+    nav {
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    /* Hero section */
+
+    .hero {
+        padding: 55px 5%;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    /* Section headings */
+
+    h2 {
+        font-size: 24px;
+    }
+
+    /* Cards */
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Images */
+
+    .image-placeholder img {
+        height: 200px;
+    }
+
+    .hero .image-placeholder img {
+        height: 220px;
+    }
+
+    /* Contact form */
+
+    form {
+        padding: 17px;
+    }
+
+    /* Dashboard table */
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    /* Footer */
+
+    footer {
+        padding: 22px 5%;
+    }
+}
+
+
+/*  SMALL MOBILE SCREENS*/
+
+@media (max-width: 400px) {
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    .card {
+        padding: 17px;
+    }
+
+    /* Smaller images */
+
+    .image-placeholder img {
+        height: 170px;
+    }
+
+    .hero .image-placeholder img {
+        height: 190px;
+    }
+}
